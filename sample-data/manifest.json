@@ -1,0 +1,43 @@
+{
+  "resolution_m": 0.05,
+  "map_size_m": [
+    10.0,
+    6.0
+  ],
+  "origin_m": [
+    0.0,
+    0.0
+  ],
+  "scenarios": [
+    [
+      "01_open_space",
+      "Safe trajectory; should need no CCD subdivision."
+    ],
+    [
+      "02_endpoints_safe_middle_collision",
+      "Endpoints safe, segment crosses circular obstacle; primary CCD test."
+    ],
+    [
+      "03_narrow_passage",
+      "Biased trajectory through narrow passage."
+    ],
+    [
+      "04_long_diagonal",
+      "Long diagonal through/near obstacle; recursive subdivision."
+    ],
+    [
+      "05_multiple_obstacles",
+      "Multiple risky regions."
+    ],
+    [
+      "06_safe_corridor",
+      "Safe corridor control case."
+    ]
+  ],
+  "orientation_cases": [
+    "straight",
+    "ninety_degree_turn",
+    "zigzag",
+    "angle_wrap"
+  ]
+}
